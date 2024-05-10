@@ -11,7 +11,7 @@ function App() {
       <Counter />
       <CustomButton text='click' onHandleClick={() => setIsOpened(!isOpened)}/>
       {
-        isOpened && <Modal/>
+        isOpened && <Modal onHandleClick={() => setIsOpened(!isOpened)}/>
       }
     </>
   );
