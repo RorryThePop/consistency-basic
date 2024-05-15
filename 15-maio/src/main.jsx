@@ -9,6 +9,7 @@ import './index.css'
 import About from './pages/About/About.jsx';
 import Shop from './pages/Shop/Shop.jsx';
 import Contacts from './pages/Contacts/Contacts.jsx';
+import Category from './pages/Shop/Category/Category.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: '/shop',
     element: <Shop/>,
+  },
+  {
+    path: '/shop/:pageId',
+    element: <Category/>
   },
   {
     path: '/contacts',
