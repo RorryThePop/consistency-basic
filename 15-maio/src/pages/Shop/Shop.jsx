@@ -8,6 +8,7 @@ function Shop() {
         <main>
             <section>
             Shop page
+            something more shop page
             </section>
         </main>
         <Footer/>
