@@ -11,6 +11,24 @@ export const goodsCategories = [
             {
                 categoryName: 'Фрукты',
                 img: fruits,
+                data: [
+                    {
+                        cardName: "Банан",
+                        cardImg: fruits
+                    },
+                    {
+                        cardName: "Апельсин",
+                        cardImg: fruits
+                    },
+                    {
+                        cardName: "Персик",
+                        cardImg: fruits
+                    },
+                    {
+                        cardName: "Ананас",
+                        cardImg: fruits
+                    }
+                ]
             }
         ]
     },
@@ -20,6 +38,25 @@ export const goodsCategories = [
             {
                 categoryName: 'Овощи',
                 img: veggies,
+                data: [
+                    {
+                        cardName: "Помидор",
+                        cardImg: veggies
+                    },
+                    {
+                        cardName: "Сельдерей",
+                        cardImg: veggies
+                    },
+                    {
+                        cardName: "Огурец",
+                        cardImg: veggies
+                    },
+                    {
+                        cardName: "Петрушка",
+                        cardImg: veggies
+                    }
+                ]
+
             }
         ]
     },
@@ -29,6 +66,25 @@ export const goodsCategories = [
             {
                 categoryName: 'Крупы',
                 img: crupi,
+                data: [
+                    {
+                        cardName: "Рис",
+                        cardImg: crupi
+                    },
+                    {
+                        cardName: "Булгур",
+                        cardImg: crupi
+                    },
+                    {
+                        cardName: "Геркулес",
+                        cardImg: crupi
+                    },
+                    {
+                        cardName: "Манка",
+                        cardImg: crupi
+                    }
+                ]
+
             }
         ]
     },
@@ -38,6 +94,24 @@ export const goodsCategories = [
             {
                 categoryName: 'Выпечка',
                 img: bread,
+                data: [
+                    {
+                        cardName: "Хлеб",
+                        cardImg: bread
+                    },
+                    {
+                        cardName: "Багет",
+                        cardImg: bread
+                    },
+                    {
+                        cardName: "Круассан",
+                        cardImg: bread
+                    },
+                    {
+                        cardName: "Булочка",
+                        cardImg: bread
+                    }
+                ]
             }
         ]
     }

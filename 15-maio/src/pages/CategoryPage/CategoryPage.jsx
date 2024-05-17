@@ -5,7 +5,7 @@ import { goodsCategories } from "../../config/GoodsCategories";
 import cls from "./CategoryPage.module.css";
 import CategoryPageItem from "./CategoryItem";
 function CategoryPage() {
-  console.log(goodsCategories);
+
   return (
     <>
       <Header />

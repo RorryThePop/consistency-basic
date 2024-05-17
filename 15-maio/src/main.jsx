@@ -13,6 +13,7 @@ import Category from './pages/Shop/Category/Category.jsx';
 import FAQ from './pages/FAQ/FAQ.jsx';
 import CategoryPage from './pages/CategoryPage/CategoryPage.jsx';
 import CategorySlugPage from './pages/CategoryPage/CategorySlugPage.jsx';
+import CategorySlugPageItem from './pages/CategoryPage/CategorySlugPageItem.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: '/categories/:categoriesId',
     element: <CategorySlugPage/>
+  },
+  {
+    path: '/categories/:categoriesId/:itemId',
+    element: <CategorySlugPageItem/>
   }
 ]);
 
