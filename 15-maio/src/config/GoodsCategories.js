@@ -1,4 +1,8 @@
 import category1 from '../assets/logo.png'
+import fruits from '../assets/fruits.jpeg'
+import veggies from '../assets/veggies.jpeg'
+import crupi from '../assets/crupi.jpeg'
+import bread from '../assets/bread.jpeg'
 
 export const goodsCategories = [
     {
@@ -6,7 +10,7 @@ export const goodsCategories = [
         category: [
             {
                 categoryName: 'Фрукты',
-                img: category1,
+                img: fruits,
             }
         ]
     },
@@ -15,7 +19,7 @@ export const goodsCategories = [
         category: [
             {
                 categoryName: 'Овощи',
-                img: category1,
+                img: veggies,
             }
         ]
     },
@@ -24,7 +28,7 @@ export const goodsCategories = [
         category: [
             {
                 categoryName: 'Крупы',
-                img: category1,
+                img: crupi,
             }
         ]
     },
@@ -33,7 +37,7 @@ export const goodsCategories = [
         category: [
             {
                 categoryName: 'Выпечка',
-                img: category1,
+                img: bread,
             }
         ]
     }

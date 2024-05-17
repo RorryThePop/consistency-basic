@@ -10,7 +10,7 @@ function CategoryPage() {
     <>
       <Header />
       <main>
-        <section>
+        <section className={cls.category__page}>
           <h3>Категории</h3>
           <div className={cls.category__list}>
             {goodsCategories.map((item, index) => (
