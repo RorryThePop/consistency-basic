@@ -10,6 +10,7 @@ import About from './pages/About/About.jsx';
 import Shop from './pages/Shop/Shop.jsx';
 import Contacts from './pages/Contacts/Contacts.jsx';
 import Category from './pages/Shop/Category/Category.jsx';
+import FAQ from './pages/FAQ/FAQ.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: '/contacts',
     element: <Contacts/>,
+  },
+  {
+    path: '/faq',
+    element: <FAQ/>,
   }
 ]);
 
