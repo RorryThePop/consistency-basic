@@ -1,0 +1,11 @@
+.comments {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.comment {
+    padding: 10px;
+    border: 1px solid teal;
+    border-radius: 8px;
+    margin: 10px 0;
+}
