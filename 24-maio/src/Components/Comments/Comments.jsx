@@ -1,20 +1,19 @@
+import { useState } from 'react';
 import cls from './Comments.module.css'
+import CommentItem from './Comment-item';
+
+
 
 function Comments () {
+    const [comment, setComment] = useState([])
+    
     return (
         <div className={cls.comments}>
-            <div className={cls.comment}>
-                <strong>Author: </strong>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod temporibus ullam in commodi ipsa dignissimos corrupti tenetur quam exercitationem!</p>
-            </div>
-            <div className={cls.comment}>
-                <strong>Author: </strong>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod temporibus ullam in commodi ipsa dignissimos corrupti tenetur quam exercitationem!</p>
-            </div>
-            <div className={cls.comment}>
-                <strong>Author: </strong>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod temporibus ullam in commodi ipsa dignissimos corrupti tenetur quam exercitationem!</p>
-            </div>
+            {
+                comment && comment.map(item => (
+                    <CommentItem/>
+                ))
+            }
         </div>
     )
 }
