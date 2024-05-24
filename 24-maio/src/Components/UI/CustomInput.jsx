@@ -1,11 +1,11 @@
-import cls from 'CustomElem.module.css'
+import cls from './CustomElem.module.css'
 
 
-function CustomInput (){
+function CustomInput (props){
+    const {value, onHandleChange, placeholder} = props;
     return (
-        <div>
-            <label htmlFor=""></label>
-            <input type="text" />
+        <div className={cls.inputForm}>
+            <input type="text" value={value} onChange={onHandleChange} placeholder={placeholder} />
         </div>
     )
 }

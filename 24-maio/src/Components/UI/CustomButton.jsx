@@ -1,9 +1,10 @@
-import cls from 'CustomElem.module.css'
+import cls from './CustomElem.module.css'
 
 
 function CustomButton (props) {
+    const {text,onHandleClick} = props
     return (
-        <button></button>
+        <button className={cls.btn} onClick={onHandleClick}> {text}</button>
     )
 }
 
