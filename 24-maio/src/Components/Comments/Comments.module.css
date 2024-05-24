@@ -13,3 +13,9 @@
     border-radius: 8px;
     margin: 10px 0;
 }
+
+.comment p {
+    border-top: 1px solid teal;
+    margin-top: 5px;
+    padding: 5px 0 0 10px;
+}
