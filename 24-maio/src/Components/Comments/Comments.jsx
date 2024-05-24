@@ -28,13 +28,17 @@ function Comments () {
         }
         setCommentValue('')
     }
+
+    const removeItem = (commentId) => {
+        setComment(comment.filter(item => item.id !== commentId))
+    }
     return (
         <div className={cls.comments}>
             <CustomInput value={commentValue} onHandleChange={handleChange}/>
             <CustomButton text='Send' onHandleClick={createComment}/>
             {
                 comment && comment.map(item => (
-                    <CommentItem author={item.author} commentBody={item.commentBody} />
+                    <CommentItem author={item.author} commentBody={item.commentBody} onHandleClick={() => removeItem(item.id)} />
                 ))
             }
         </div>

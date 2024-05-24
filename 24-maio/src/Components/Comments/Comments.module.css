@@ -12,10 +12,26 @@
     border: 1px solid teal;
     border-radius: 8px;
     margin: 10px 0;
+    position: relative;
 }
 
 .comment p {
     border-top: 1px solid teal;
     margin-top: 5px;
     padding: 5px 0 0 10px;
+}
+
+.delete {
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    top: -18px;
+    font-size: 32px;
+    font-weight: 400;
+    color: teal;
+}
+
+.delete:hover {
+    color: black;
+    transition: .3s ease-in-out;
 }

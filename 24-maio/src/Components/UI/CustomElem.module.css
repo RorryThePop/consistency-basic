@@ -5,14 +5,10 @@
     border-radius: 8px;
 }
 
-.inputForm {
-
-}
-
 .inputForm input{
     padding: 10px;
     border: 1px solid teal;
     border-radius: 8px;
-    margin: 5px 0;
+    margin: 5px 0 ;
     width: 100%;
 }
