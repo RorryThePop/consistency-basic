@@ -16,13 +16,25 @@ function Comments () {
         setCommentValue(target.value)
         console.log(event)
     }
+
+    const createComment = () => {
+        const newComment = {
+            id: Date.now(),
+            author: "John Kowalski",
+            commentBody: commentValue
+        }
+        if(commentValue.length > 0) {
+            setComment([...comment, newComment])
+        }
+        setCommentValue('')
+    }
     return (
         <div className={cls.comments}>
-            <CustomButton text='click))' onHandleClick={( )=> console.log('hehe')}/>
             <CustomInput value={commentValue} onHandleChange={handleChange}/>
+            <CustomButton text='Send' onHandleClick={createComment}/>
             {
                 comment && comment.map(item => (
-                    <CommentItem/>
+                    <CommentItem author={item.author} commentBody={item.commentBody} />
                 ))
             }
         </div>

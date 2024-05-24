@@ -1,12 +1,16 @@
-import cls from './Comments.module.css'
-
-function CommentItem() {
-    return (
-        <div className={cls.comment}>
-                <strong>Author: </strong>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod temporibus ullam in commodi ipsa dignissimos corrupti tenetur quam exercitationem!</p>
-            </div>
-    )
+import cls from "./Comments.module.css";
+import profileLogo from "../../assets/user.svg";
+function CommentItem(props) {
+  const { author, commentBody } = props;
+  return (
+    <div className={cls.comment}>
+      <div className={cls.comment__top}>
+        <img src={profileLogo} alt="user profile" />
+        <strong>{author} </strong>
+      </div>
+      <p>{commentBody}</p>
+    </div>
+  );
 }
 
 export default CommentItem;
